@@ -795,13 +795,8 @@ function unlockPro() {
    * On return with ?paid=1, persist:
    *   localStorage.setItem('aw_resonance_pro','1');
    */
-  const ok = confirm(
-    'Resonance Creator Mode \u2014 $2.99\n\n' +
-    '\u2192 Custom affirmation input\n' +
-    '\u2192 30-second video export with 432 Hz tone\n\n' +
-    'OK to simulate unlock (wire Stripe/Gumroad for production).'
-  );
-  if (!ok) return;
+  window.location.href = 'https://buy.stripe.com/9B614o6HceOX5obfj467S0c';
+  return;
   try { localStorage.setItem('aw_resonance_pro','1'); } catch(e){}
   document.getElementById('proGate').classList.add('open');
 }
