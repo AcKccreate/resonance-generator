@@ -517,7 +517,7 @@
       </div>
       <div class="timer-info">
         <div class="freq">432 Hz</div>
-        <div class="freq-sub">Cosmic pitch &middot; 60 second session</div>
+        <div class="freq-sub">Cosmic pitch &middot; <span id="sessionNote">30s free &mdash; <a href="#proGate" style="color:#C8A84B;text-decoration:none" onclick="document.getElementById('proGate').scrollIntoView({behavior:'smooth'})">unlock full</a></span></div>
       </div>
     </div>
 
@@ -563,6 +563,13 @@
       </div>
     </div>
   </div>
+
+<div style="margin:20px 0 8px;padding:18px 16px;background:rgba(200,168,75,.09);border:1px solid rgba(200,168,75,.3);border-radius:12px;text-align:center">
+  <div style="font-size:.65rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#C8A84B;margin-bottom:8px">SAVE 75%</div>
+  <div style="font-size:1rem;font-weight:700;color:#EDE7DA;margin-bottom:6px">Get ALL 6 Tools for $4.99</div>
+  <div style="font-size:.78rem;color:#9A978F;margin-bottom:14px">Resume Optimizer &middot; Tax Calculator &middot; Resonance Generator &middot; Side Hustle Planner &middot; AI Companion &middot; Anchor Remembers</div>
+  <a href="https://buy.stripe.com/3cI7sM7Lg6ir5obef067S0r" target="_blank" rel="noopener" style="display:inline-block;padding:10px 22px;background:#C8A84B;color:#08101E;font-weight:700;font-size:.85rem;border-radius:8px;text-decoration:none;letter-spacing:.3px">Get the Bundle &rarr;</a>
+</div>
 
   <!-- ── SUPPORT ── -->
   <div class="support-area">
@@ -815,7 +822,7 @@ function unlockPro() {
    * On return with ?paid=1, persist:
    *   localStorage.setItem('aw_resonance_pro','1');
    */
-  window.location.href = 'https://buy.stripe.com/9B614o6HceOX5obfj467S0c';
+  window.location.href = 'https://buy.stripe.com/00w7sM9To8qz5ob8UG67S0n';
   return;
   try { localStorage.setItem('aw_resonance_pro','1'); } catch(e){}
   document.getElementById('proGate').classList.add('open');
